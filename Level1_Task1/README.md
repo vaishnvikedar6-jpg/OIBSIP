@@ -1,7 +1,7 @@
 # OIBSIP
 "Web Development and Designing Internship Projects - Oasis Infobyte."
 # OIBSIP - Web Development and Designing Internship
-Landing Page:https://vaishnvikedar6-jpg.github.io/OIBSIP/
+Landing Page:https://vaishnvikedar6-jpg.github.io/OIBSIP/Level1_Task1/
 
 This repository contains the projects completed during my one-month virtual internship at **Oasis Infobyte** (January 2026 Batch).
 
