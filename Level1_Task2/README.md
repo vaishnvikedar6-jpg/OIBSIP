@@ -1,6 +1,9 @@
 **Portfolio Website - Oasis Infobyte Task 2**
 **Project Overview**
-This project is a professional personal portfolio website developed as part of my Web Development Internship at Oasis Infobyte. The goal was to create a responsive, visually appealing, and informative site that showcases my skills as a Computer Engineer.
+This project is a professional personal portfolio website
+developed as part of my Web Development Internship at Oasis Infobyte.
+The goal was to create a responsive, visually appealing, and informative
+site that showcases my skills as a Computer Engineer.
 
 **Features**
 Hero Section: A modern landing area with a dark purple tech-theme.
