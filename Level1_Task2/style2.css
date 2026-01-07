@@ -1,0 +1,237 @@
+:root {
+    --primary: #bb86fc;
+    --secondary: #7c4dff;
+    --bg-dark: #1a1625;
+    --bg-card: #2d273f;
+    --white: #ffffff;
+    --text-dim: #b3b3b3;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    background-color: var(--bg-dark);
+    color: var(--white);
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+#hero-section {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: radial-gradient(circle at center, #2d273f 0%, #1a1625 100%);
+    padding: 20px;
+}
+
+#hero-section h1 {
+    font-size: clamp(2rem, 7vw, 3.5rem);
+    background: linear-gradient(to right, #ffffff, var(--primary));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+}
+
+#hero-section h2 {
+    font-size: clamp(1rem, 4vw, 1.5rem);
+    color: var(--text-dim);
+    font-weight: 300;
+    letter-spacing: 4px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    margin-top: 40px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--white);
+    font-weight: 600;
+    font-size: 0.85rem;
+    letter-spacing: 1.5px;
+    transition: 0.3s ease;
+    padding: 5px 10px;
+}
+
+nav ul li a:hover {
+    color: var(--primary);
+    text-shadow: 0 0 10px var(--primary);
+}
+
+section {
+    padding: 100px 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title {
+    color: var(--primary);
+    font-size: clamp(1.8rem, 5vw, 2.5rem);
+    margin-bottom: 50px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.about-section {
+    background-color: #1f1b2e;
+}
+
+.about-section h2 {
+    color: var(--primary);
+    margin-bottom: 25px;
+}
+
+.about-section p {
+    max-width: 850px;
+    text-align: center;
+    font-size: 1.15rem;
+    color: var(--text-dim);
+    line-height: 1.8;
+}
+
+.cert-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    width: 100%;
+}
+
+
+
+.cert-item {
+    background: var(--bg-card);
+    padding: 25px;
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    transition: all 0.3s ease;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+    font-size: 0.95rem;
+}
+
+.cert-item:hover {
+    transform: translateY(-8px);
+    border-color: var(--primary);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+    background: #342d4a;
+}
+
+.internship-container {
+    width: 100%;
+    max-width: 850px;
+}
+
+.intern-box {
+    background: var(--bg-card);
+    padding: 35px;
+    border-radius: 15px;
+    border-left: 6px solid var(--secondary);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.intern-header h3 {
+    color: var(--primary);
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+}
+
+.company {
+    display: block;
+    font-weight: bold;
+    font-size: 1.1rem;
+    margin-bottom: 8px;
+}
+
+.date {
+    display: inline-block;
+    font-size: 0.8rem;
+    background: rgba(124, 77, 255, 0.25);
+    color: var(--primary);
+    padding: 4px 14px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.intern-details {
+    padding-left: 20px;
+    color: var(--text-dim);
+}
+
+.intern-details li {
+    margin-bottom: 12px;
+}
+
+.contact-form {
+    width: 100%;
+    max-width: 550px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+input, textarea {
+    background: var(--bg-card);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    color: white;
+    padding: 18px;
+    border-radius: 10px;
+    font-family: inherit;
+    font-size: 1rem;
+    transition: 0.3s;
+}
+
+input:focus, textarea:focus {
+    outline: none;
+    border-color: var(--primary);
+    background: #342d4a;
+}
+
+button {
+    background: linear-gradient(45deg, var(--secondary), var(--primary));
+    color: white;
+    padding: 18px;
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-top: 10px;
+}
+
+button:hover {
+    filter: brightness(1.2);
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(124, 77, 255, 0.4);
+}
+
+@media (max-width: 768px) {
+    section { padding: 60px 5%; }
+    nav ul { gap: 15px; flex-wrap: wrap; justify-content: center; }
+    .intern-box { padding: 20px; }
+}
