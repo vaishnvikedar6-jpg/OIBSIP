@@ -78,5 +78,20 @@
     <footer style="text-align: center; padding: 20px; color: var(--text-dim); background: var(--bg-dark); font-size: 0.9rem; border-top: 1px solid rgba(255,255,255,0.05);">
     <p>&copy; 2026 Vaishnavi Kedar | Oasis Infobyte Internship Task 2</p>
 </footer>
+    <script>
+        document.querySelector('form').addEventListener('submit', function(e) {
+            e.preventDefault(); // Stops the page from refreshing
+            
+            // Get values from the form
+            const name = this.querySelector('input[type="text"]').value;
+            const email = this.querySelector('input[type="email"]').value;
+            
+            // Show a confirmation message
+            alert("Hi " + name + ", thanks for reaching out! I will get back to you at " + email + ".");
+            
+            // Clear the form
+            this.reset();
+        });
+    </script>
 </body>
 </html>
