@@ -5,7 +5,7 @@ This project is a professional personal portfolio website developed as part of m
 WEBSITE- https://vaishnvikedar6-jpg.github.io/OIBSIP/Level1_Task2/
 
 ## Features
-1. **Hero Section**: A modern landing area with a dark purple tech-theme.
+1. **Hero Section**: A modern landing area with a dark purple tech-theme along with gradient white text.
 2. **About Me**: A unique professional bio highlighting my interests in Cloud, AI, and Prompt Engineering.
 3. **Certifications Grid**: A structured display of my professional credentials from AWS, Microsoft, and more.
 4. **Internship Experience**: A detailed section highlighting my current role at Oasis Infobyte.
