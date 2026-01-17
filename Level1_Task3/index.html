@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Converter</title>
+    <link rel="stylesheet" href="Tempcss.css">
+</head>
+<body>
+    <section>
+        <h1>Welcome to Temperature Converter </h1>
+       
+        <label>Enter the Temperature</label>
+         <input type="number" id="userInput" placeholder="valid">
+         <label>Unit</label>
+         <select id="unitChoice">
+         <option value="C">Celsius to Fahrenheit</option>
+         <option value="F">Fahrenheit to Celsius</option>
+         <option value="K">Kelvin to Fahrenheit</option>
+          <option value="K1">Kelvin to Celcius</option>
+           <option value="C1">Celcius to Kelvin</option>
+            <option value="F1">Fahrenheit to Kelvin</option>
+
+    </select>
+         <button onclick="calculate()">Convert the Temperature</button>
+     
+    </section>
+    <section>
+           <p id="result">result</p>
+    </section>
+  <script>
+    function calculate() {
+       const val = document.getElementById("userInput").value;
+       const unit = document.getElementById("unitChoice").value;
+       const display = document.getElementById("result");
+
+        if (val === "" || isNaN(val)) {
+          display.innerHTML = "Please enter a valid number!";
+           return;
+              }
+
+            let inputNum = parseFloat(val);
+             let resultText = "";
+
+            if (unit === "C") {
+              resultText = (inputNum * 9/5 + 32).toFixed(2) + " °F";
+              }        
+              else if (unit === "F") {
+              resultText = ((inputNum - 32) * 5/9).toFixed(2) + " °C";
+             }        
+            else if (unit === "K") {
+              resultText = ((inputNum - 273.15) * 9/5 + 32).toFixed(2) + " °F";
+             }        
+            else if (unit === "K1") {
+              resultText = (inputNum - 273.15).toFixed(2) + " °C";
+              }        
+            else if (unit === "C1") {
+              resultText = (inputNum + 273.15).toFixed(2) + " K";
+             }
+            else if (unit === "F1") {
+              resultText = ((inputNum - 32) * 5/9 + 273.15).toFixed(2) + " K";
+                }
+
+             display.innerHTML = resultText;
+}
+</script>
+      
+    
+</body>
+</html>
