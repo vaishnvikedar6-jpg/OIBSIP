@@ -14,9 +14,9 @@ This repository contains the projects completed during my one-month virtual inte
 ## 📁 Tasks
 | Task No. | Project Name | Description | Status |
 | :--- | :--- | :--- | :--- |
-| 1 | Landing Page | A responsive landing page using HTML and CSS. | In Progress |
-| 2 | Personal Portfolio | A personal website showcasing my skills and resume. | Pending |
-| 3 | Temperature Converter | A functional web app to convert temperatures. | Pending |
+| 1 | Landing Page | A responsive landing page using HTML and CSS. | Completed |
+| 2 | Personal Portfolio | A personal website showcasing my skills and resume. | Completed |
+| 3 | Temperature Converter | A functional web app to convert temperatures. | Completed|
 
 ## 🛠️ Tech Stack
 - HTML5
